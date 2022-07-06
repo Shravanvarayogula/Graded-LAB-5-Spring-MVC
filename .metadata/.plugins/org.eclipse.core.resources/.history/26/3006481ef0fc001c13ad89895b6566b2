@@ -1,0 +1,5 @@
+package com.greatlearning.studentregistration.entity;
+
+public class Student {
+
+}

@@ -1,0 +1,5 @@
+package com.greatlearning.studentregistration.controller;
+
+public class RegistrationController {
+
+}

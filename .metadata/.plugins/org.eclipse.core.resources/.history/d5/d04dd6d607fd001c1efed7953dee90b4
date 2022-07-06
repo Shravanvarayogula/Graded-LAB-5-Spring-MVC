@@ -1,0 +1,32 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+	pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>New User Registration Form</title>
+</head>
+<body>
+	<form action="processForm" modelAttribute="student"></form>
+	<br>
+	<br> First Name :
+	<form:input path="f_name" />
+	<br>
+	<br> Last Name :
+	<form:input path="l_name" />
+	<br> Email Address :
+	<form:input path="email" />
+	<br>
+	<br> Branch Name :
+	<form:select path = "branch_name"/>
+		 <form:options items= "${student.branch_name }"/>
+	</form>
+	<br> Country :
+	<form:select path = "country">
+		 <form:options items="${student.country}"/>
+	</form>
+	<br>
+	<br>
+	<input type="submit" values ="submit"/> 
+</body>
+</html>

@@ -1,0 +1,23 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+	pageEncoding="UTF-8"%>
+
+<!DOCTYPE html>
+	
+<html>
+
+<head>
+<meta charset="ISO-8859-1">
+<head> 
+<title> Registration Confirmation</title>
+</head>
+
+<body>
+
+<h3> Your Registration is confirmed! 
+<p> Please find the Details: </p>
+
+
+</h3>
+
+</body>
+</html>

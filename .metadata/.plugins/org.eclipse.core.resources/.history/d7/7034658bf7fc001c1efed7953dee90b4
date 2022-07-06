@@ -1,0 +1,37 @@
+package com.greatlearning.studentregistration.service;
+
+import org.hibernate.SessionFactory;
+import org.hibernate.cfg.Configuration;
+import org.springframework.jdbc.core.JdbcTemplate;
+import org.springframework.jdbc.datasource.SimpleDriverDataSource;
+
+public class StudentRegistrationService {
+	
+	static JdbcTemplate jdbctemplate ;
+	static SimpleDriverDataSource datasourceObj;
+	
+	static String USERNAME = "root";
+	static String PASSWORD = "root";
+	static String URL = "jdbc:mysql://localhost:3306/student_registration_db";
+	
+	public static SimpleDriverDataSource getDatabaseconnection() {
+		datasourceObj = new SimpleDriverDataSource();
+		try {
+			datasourceObj.setDriver(new com.mysql.cj.jdbc.Driver());
+			
+		} catch (Exception e) {
+			// TODO: handle exception
+		}
+	}
+	
+	
+	
+	public static void main(String[] args) {
+		System.out.println("Connecting to Database");
+
+		SessionFactory session_factory = new Configuration()
+								.configure("hibernate.cfg.xml")
+								.buildSessionFactory();
+	}
+
+}
